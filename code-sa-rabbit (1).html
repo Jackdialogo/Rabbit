@@ -1,1963 +1,279 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html
-lang="en-US"
-xmlns="http://www.w3.org/1999/xhtml"
-><head
-><meta
-content="text/html;charset=UTF-8"
-http-equiv="content-type"
-/><title
->???</title
-><meta
-content="Danielle Joyce Balin"
-name="author"
-/><meta
-content="Danielle Joyce Balin"
-name="ms-cp-lastModifiedBy"
-/><meta
-content="5"
-name="ms-cp-revision"
-/><meta
-content="2024-05-29T03:39:00Z"
-name="dcterms.created"
-/><meta
-content="2024-06-23T03:51:00Z"
-name="dcterms.modified"
-/><meta
-content="Normal.dotm"
-name="ms-ep-Template"
-/><meta
-content="477"
-name="ms-ep-TotalTime"
-/><meta
-content="15"
-name="ms-ep-Pages"
-/><meta
-content="1306"
-name="ms-ep-Words"
-/><meta
-content="11580"
-name="ms-ep-Characters"
-/><meta
-content="Microsoft Office Word"
-name="ms-ep-Application"
-/><meta
-content="0"
-name="ms-ep-DocSecurity"
-/><meta
-content="611"
-name="ms-ep-Lines"
-/><meta
-content="550"
-name="ms-ep-Paragraphs"
-/><meta
-content="false"
-name="ms-ep-ScaleCrop"
-/><meta
-content="Title;1"
-name="ms-ep-HeadingPairs"
-/><meta
-content="false"
-name="ms-ep-LinksUpToDate"
-/><meta
-content="17092"
-name="ms-ep-CharactersWithSpaces"
-/><meta
-content="false"
-name="ms-ep-SharedDoc"
-/><meta
-content="false"
-name="ms-ep-HyperlinksChanged"
-/><meta
-content="16.0000"
-name="ms-ep-AppVersion"
-/><meta
-content="c93e4c0d-5b67-483c-a936-9fd17a57101b"
-name="ms-up-GrammarlyDocumentId"
-/><meta
-content="XMLmind Word To XML Professional Edition 1.11.0"
-name="generator"
-/><style
-type="text/css"
->
-body {
-    background-color: white;
-    font-family: Aptos;
-    font-size: 11pt;
-}
+<!DOCTYPE html>
 
-p {
-    -ms-defaultTabStop: 36pt;
-    line-height: 1.54;
-    margin-bottom: 8pt;
-    margin-top: 0pt;
-}
+<html lang="en">
 
-p:empty {
-    height: 1em;
-}
+<head>
 
-a {
-    text-decoration: none;
-}
+    <meta charset="UTF-8">
 
-table {
-    border-collapse: separate;
-    border-spacing: 0pt;
-    empty-cells: hide;
-}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-td {
-    padding-bottom: 0pt;
-    padding-left: 5.75pt;
-    padding-right: 5.75pt;
-    padding-top: 0pt;
-    vertical-align: top;
-}
+    <title>Rabbit Cage Management</title>
 
-.p-Normal {
+    <link rel="stylesheet" href="styles.css">
 
-}
-</style
-></head
-><body
-><p
-class="p-Normal"
-><span
-style="background-color: #FFFF00;"
->Index.html</span
-></p
-><p
-class="p-Normal"
->&lt;!DOCTYPE html&gt;</p
-><p
-class="p-Normal"
->&lt;html lang="en"&gt;</p
-><p
-class="p-Normal"
->&lt;head&gt;</p
-><p
-class="p-Normal"
->    &lt;meta charset="UTF-8"&gt;</p
-><p
-class="p-Normal"
->    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p
-><p
-class="p-Normal"
->    &lt;title&gt;Rabbit Cage Management&lt;/title&gt;</p
-><p
-class="p-Normal"
->    &lt;link rel="stylesheet" href="styles.css"&gt;</p
-><p
-class="p-Normal"
->&lt;/head&gt;</p
-><p
-class="p-Normal"
->&lt;body&gt;</p
-><p
-class="p-Normal"
->    &lt;header&gt;</p
-><p
-class="p-Normal"
->        &lt;button onclick="goHome()"&gt;&amp;#x1F3E0;&lt;/button&gt;</p
-><p
-class="p-Normal"
->        &lt;span&gt;Rabbit Cage Management&lt;/span&gt;</p
-><p
-class="p-Normal"
->    &lt;/header&gt;</p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
->    &lt;div id="cageDetails"&gt;</p
-><p
-class="p-Normal"
->        &lt;form id="rabbitForm" onsubmit="saveData(event)"&gt;</p
-><p
-class="p-Normal"
->            &lt;div&gt;</p
-><p
-class="p-Normal"
->                &lt;label for="breed"&gt;BREED:&lt;/label&gt;</p
-><p
-class="p-Normal"
->                &lt;input type="text" id="breed" name="breed"&gt;</p
-><p
-class="p-Normal"
->            &lt;/div&gt;</p
-><p
-class="p-Normal"
->            &lt;div&gt;</p
-><p
-class="p-Normal"
->                &lt;label for="family"&gt;FAMILY:&lt;/label&gt;</p
-><p
-class="p-Normal"
->                &lt;input type="text" id="family" name="family"&gt;</p
-><p
-class="p-Normal"
->            &lt;/div&gt;</p
-><p
-class="p-Normal"
->            &lt;div&gt;</p
-><p
-class="p-Normal"
->                &lt;label for="birthDate"&gt;DATE OF BIRTH:&lt;/label&gt;</p
-><p
-class="p-Normal"
->                &lt;input type="date" id="birthDate" name="birthDate"&gt;</p
-><p
-class="p-Normal"
->            &lt;/div&gt;</p
-><p
-class="p-Normal"
->            &lt;div&gt;</p
-><p
-class="p-Normal"
->                &lt;label for="weight"&gt;WEIGHT:&lt;/label&gt;</p
-><p
-class="p-Normal"
->                &lt;input type="text" id="weight" name="weight"&gt;</p
-><p
-class="p-Normal"
->            &lt;/div&gt;</p
-><p
-class="p-Normal"
->            &lt;div&gt;</p
-><p
-class="p-Normal"
->                &lt;label&gt;PREGNANT:&lt;/label&gt;</p
-><p
-class="p-Normal"
->                &lt;label&gt;&lt;input type="radio" name="pregnant" value="yes" onclick="togglePregnancyDetails(true)"&gt; YES&lt;/label&gt;</p
-><p
-class="p-Normal"
->                &lt;label&gt;&lt;input type="radio" name="pregnant" value="no" onclick="togglePregnancyDetails(false)"&gt; NO&lt;/label&gt;</p
-><p
-class="p-Normal"
->            &lt;/div&gt;</p
-><p
-class="p-Normal"
->            &lt;div id="pregnancyDetails" style="display: none;"&gt;</p
-><p
-class="p-Normal"
->                &lt;div&gt;</p
-><p
-class="p-Normal"
->                    &lt;label for="matedRabbit"&gt;MATED RABBIT:&lt;/label&gt;</p
-><p
-class="p-Normal"
->                    &lt;input type="text" id="matedRabbit" name="matedRabbit"&gt;</p
-><p
-class="p-Normal"
->                &lt;/div&gt;</p
-><p
-class="p-Normal"
->                &lt;div&gt;</p
-><p
-class="p-Normal"
->                    &lt;label for="pregnancyStart"&gt;START OF PREGNANCY:&lt;/label&gt;</p
-><p
-class="p-Normal"
->                    &lt;input type="date" id="pregnancyStart" name="pregnancyStart"&gt;</p
-><p
-class="p-Normal"
->                &lt;/div&gt;</p
-><p
-class="p-Normal"
->                &lt;div&gt;</p
-><p
-class="p-Normal"
->                    &lt;label for="dueDate"&gt;DUE DATE OF PREGNANCY:&lt;/label&gt;</p
-><p
-class="p-Normal"
->                    &lt;input type="date" id="dueDate" name="dueDate"&gt;</p
-><p
-class="p-Normal"
->                &lt;/div&gt;</p
-><p
-class="p-Normal"
->            &lt;/div&gt;</p
-><p
-class="p-Normal"
->            &lt;div&gt;</p
-><p
-class="p-Normal"
->                &lt;label for="foodIntake"&gt;FOOD INTAKE:&lt;/label&gt;</p
-><p
-class="p-Normal"
->                &lt;label&gt;&lt;input type="radio" name="foodIntake" value="normal"&gt; NORMAL&lt;/label&gt;</p
-><p
-class="p-Normal"
->                &lt;label&gt;&lt;input type="radio" name="foodIntake" value="irregular"&gt; IRREGULAR&lt;/label&gt;</p
-><p
-class="p-Normal"
->            &lt;/div&gt;</p
-><p
-class="p-Normal"
->            &lt;div&gt;</p
-><p
-class="p-Normal"
->                &lt;label&gt;ELIGIBLE FOR MATING:&lt;/label&gt;</p
-><p
-class="p-Normal"
->                &lt;label&gt;&lt;input type="radio" name="mating" value="yes"&gt; YES&lt;/label&gt;</p
-><p
-class="p-Normal"
->                &lt;label&gt;&lt;input type="radio" name="mating" value="no"&gt; NO&lt;/label&gt;</p
-><p
-class="p-Normal"
->            &lt;/div&gt;</p
-><p
-class="p-Normal"
->            &lt;div&gt;</p
-><p
-class="p-Normal"
->                &lt;label for="note"&gt;NOTE:&lt;/label&gt;</p
-><p
-class="p-Normal"
->                &lt;textarea id="note" name="note"&gt;&lt;/textarea&gt;</p
-><p
-class="p-Normal"
->            &lt;/div&gt;</p
-><p
-class="p-Normal"
->            &lt;div class="buttons"&gt;</p
-><p
-class="p-Normal"
->                &lt;button type="submit"&gt;SUBMIT&lt;/button&gt;</p
-><p
-class="p-Normal"
->                &lt;button type="button" onclick="goHome()"&gt;CANCEL&lt;/button&gt;</p
-><p
-class="p-Normal"
->            &lt;/div&gt;</p
-><p
-class="p-Normal"
->        &lt;/form&gt;</p
-><p
-class="p-Normal"
->    &lt;/div&gt;</p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
->    &lt;div id="homePage" class="cage-list" style="display: none;"&gt;</p
-><p
-class="p-Normal"
->        &lt;button onclick="showCageDetails(1)"&gt;CAGE 1&lt;/button&gt;</p
-><p
-class="p-Normal"
->        &lt;button onclick="showCageDetails(2)"&gt;CAGE 2&lt;/button&gt;</p
-><p
-class="p-Normal"
->        &lt;button onclick="showCageDetails(3)"&gt;CAGE 3&lt;/button&gt;</p
-><p
-class="p-Normal"
->        &lt;button onclick="showCageDetails(4)"&gt;CAGE 4&lt;/button&gt;</p
-><p
-class="p-Normal"
->    &lt;/div&gt;</p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
->    &lt;script&gt;</p
-><p
-class="p-Normal"
->        function goHome() {</p
-><p
-class="p-Normal"
->            document.getElementById('homePage').style.display = 'block';</p
-><p
-class="p-Normal"
->            document.getElementById('cageDetails').style.display = 'none';</p
-><p
-class="p-Normal"
->            document.getElementById('pregnancyDetails').style.display = 'none';</p
-><p
-class="p-Normal"
->        }</p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
->        function showCageDetails(cageNumber) {</p
-><p
-class="p-Normal"
->            document.getElementById('homePage').style.display = 'none';</p
-><p
-class="p-Normal"
->            document.getElementById('cageDetails').style.display = 'block';</p
-><p
-class="p-Normal"
->            loadData(cageNumber);</p
-><p
-class="p-Normal"
->            // Store the current cage number</p
-><p
-class="p-Normal"
->            document.getElementById('rabbitForm').dataset.cageNumber = cageNumber;</p
-><p
-class="p-Normal"
->        }</p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
->        function togglePregnancyDetails(show) {</p
-><p
-class="p-Normal"
->            document.getElementById('pregnancyDetails').style.display = show ? 'block' : 'none';</p
-><p
-class="p-Normal"
->        }</p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
->        function saveData(event) {</p
-><p
-class="p-Normal"
->            event.preventDefault();</p
-><p
-class="p-Normal"
->            const form = document.getElementById('rabbitForm');</p
-><p
-class="p-Normal"
->            const cageNumber = form.dataset.cageNumber;</p
-><p
-class="p-Normal"
->            const data = new FormData(form);</p
-><p
-class="p-Normal"
->            const obj = {};</p
-><p
-class="p-Normal"
->            data.forEach((value, key) =&gt; {</p
-><p
-class="p-Normal"
->                obj[key] = value;</p
-><p
-class="p-Normal"
->            });</p
-><p
-class="p-Normal"
->            localStorage.setItem(`cageData${cageNumber}`, JSON.stringify(obj));</p
-><p
-class="p-Normal"
->            goHome();</p
-><p
-class="p-Normal"
->        }</p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
->        function loadData(cageNumber) {</p
-><p
-class="p-Normal"
->            const data = JSON.parse(localStorage.getItem(`cageData${cageNumber}`));</p
-><p
-class="p-Normal"
->            const form = document.getElementById('rabbitForm');</p
-><p
-class="p-Normal"
->            if (data) {</p
-><p
-class="p-Normal"
->                Object.keys(data).forEach(key =&gt; {</p
-><p
-class="p-Normal"
->                    const field = form.elements[key];</p
-><p
-class="p-Normal"
->                    if (field) {</p
-><p
-class="p-Normal"
->                        if (field.type === 'radio') {</p
-><p
-class="p-Normal"
->                            form.elements[key].value = data[key];</p
-><p
-class="p-Normal"
->                            if (data[key] === "yes") {</p
-><p
-class="p-Normal"
->                                field.checked = true;</p
-><p
-class="p-Normal"
->                                togglePregnancyDetails(true);</p
-><p
-class="p-Normal"
->                            } else {</p
-><p
-class="p-Normal"
->                                field.checked = true;</p
-><p
-class="p-Normal"
->                                togglePregnancyDetails(false);</p
-><p
-class="p-Normal"
->                            }</p
-><p
-class="p-Normal"
->                        } else {</p
-><p
-class="p-Normal"
->                            field.value = data[key];</p
-><p
-class="p-Normal"
->                        }</p
-><p
-class="p-Normal"
->                    }</p
-><p
-class="p-Normal"
->                });</p
-><p
-class="p-Normal"
->            } else {</p
-><p
-class="p-Normal"
->                form.reset();</p
-><p
-class="p-Normal"
->                togglePregnancyDetails(false);</p
-><p
-class="p-Normal"
->            }</p
-><p
-class="p-Normal"
->        }</p
-><p
-class="p-Normal"
->    &lt;/script&gt;</p
-><p
-class="p-Normal"
->&lt;/body&gt;</p
-><p
-class="p-Normal"
->&lt;/html&gt;</p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
-><span
-style="background-color: #FFFF00;"
->Styles.css</span
-></p
-><p
-class="p-Normal"
->/* General styling */</p
-><p
-class="p-Normal"
->body {</p
-><p
-class="p-Normal"
->    font-family: Arial, sans-serif;</p
-><p
-class="p-Normal"
->    background-color: #f4f4f4;</p
-><p
-class="p-Normal"
->    margin: 0;</p
-><p
-class="p-Normal"
->    padding: 0;</p
-><p
-class="p-Normal"
->    display: flex;</p
-><p
-class="p-Normal"
->    justify-content: center;</p
-><p
-class="p-Normal"
->    align-items: center;</p
-><p
-class="p-Normal"
->    height: 100vh;</p
-><p
-class="p-Normal"
->    flex-direction: column;</p
-><p
-class="p-Normal"
->    background-image: url('https://i.pinimg.com/564x/13/09/be/1309bedbe8e0684bcee7d04304e93dc3.jpg');</p
-><p
-class="p-Normal"
->    background-size: cover;</p
-><p
-class="p-Normal"
->    background-position: center;</p
-><p
-class="p-Normal"
->}</p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
->/* Header styling */</p
-><p
-class="p-Normal"
->header {</p
-><p
-class="p-Normal"
->    background-color: #4CAF50;</p
-><p
-class="p-Normal"
->    color: white;</p
-><p
-class="p-Normal"
->    padding: 15px;</p
-><p
-class="p-Normal"
->    text-align: center;</p
-><p
-class="p-Normal"
->    width: 100%;</p
-><p
-class="p-Normal"
->    box-shadow: 0 2px 4px rgba(0,0,0,0.1);</p
-><p
-class="p-Normal"
->    position: relative;</p
-><p
-class="p-Normal"
->}</p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
->header button {</p
-><p
-class="p-Normal"
->    background: none;</p
-><p
-class="p-Normal"
->    border: none;</p
-><p
-class="p-Normal"
->    color: white;</p
-><p
-class="p-Normal"
->    font-size: 1.5em;</p
-><p
-class="p-Normal"
->    cursor: pointer;</p
-><p
-class="p-Normal"
->    position: absolute;</p
-><p
-class="p-Normal"
->    left: 15px;</p
-><p
-class="p-Normal"
->    top: 15px;</p
-><p
-class="p-Normal"
->}</p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
->/* Home page styling */</p
-><p
-class="p-Normal"
->.cage-list {</p
-><p
-class="p-Normal"
->    display: flex;</p
-><p
-class="p-Normal"
->    flex-direction: column;</p
-><p
-class="p-Normal"
->    align-items: center;</p
-><p
-class="p-Normal"
->    margin-top: 50px;</p
-><p
-class="p-Normal"
->    width: 100%;</p
-><p
-class="p-Normal"
->    max-width: 300px; /* Adjust the max width */</p
-><p
-class="p-Normal"
->    padding: 20px;</p
-><p
-class="p-Normal"
->}</p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
->.cage-list button {</p
-><p
-class="p-Normal"
->    background-color: #f4f4f4;</p
-><p
-class="p-Normal"
->    color: #000;</p
-><p
-class="p-Normal"
->    border: 2px solid #4CAF50;</p
-><p
-class="p-Normal"
->    padding: 15px 20px;</p
-><p
-class="p-Normal"
->    cursor: pointer;</p
-><p
-class="p-Normal"
->    border-radius: 50px;</p
-><p
-class="p-Normal"
->    transition: background-color 0.3s ease, color 0.3s ease;</p
-><p
-class="p-Normal"
->    font-size: 1.2em;</p
-><p
-class="p-Normal"
->    width: 100%; /* Full width within the container */</p
-><p
-class="p-Normal"
->    text-align: center;</p
-><p
-class="p-Normal"
->    margin: 10px 0; /* Add vertical space between buttons */</p
-><p
-class="p-Normal"
->}</p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
->.cage-list button:hover {</p
-><p
-class="p-Normal"
->    background-color: #4CAF50;</p
-><p
-class="p-Normal"
->    color: white;</p
-><p
-class="p-Normal"
->}</p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
->/* Cage details form styling */</p
-><p
-class="p-Normal"
->form {</p
-><p
-class="p-Normal"
->    background-color: white;</p
-><p
-class="p-Normal"
->    padding: 20px;</p
-><p
-class="p-Normal"
->    border-radius: 10px;</p
-><p
-class="p-Normal"
->    box-shadow: 0 2px 4px rgba(0,0,0,0.1);</p
-><p
-class="p-Normal"
->    width: 80%;</p
-><p
-class="p-Normal"
->    max-width: 400px;</p
-><p
-class="p-Normal"
->    display: flex;</p
-><p
-class="p-Normal"
->    flex-direction: column;</p
-><p
-class="p-Normal"
->}</p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
->form div {</p
-><p
-class="p-Normal"
->    margin-bottom: 15px;</p
-><p
-class="p-Normal"
->}</p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
->form label {</p
-><p
-class="p-Normal"
->    display: block;</p
-><p
-class="p-Normal"
->    margin-bottom: 5px;</p
-><p
-class="p-Normal"
->    font-weight: bold;</p
-><p
-class="p-Normal"
->}</p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
->form input[type="text"],</p
-><p
-class="p-Normal"
->form input[type="date"],</p
-><p
-class="p-Normal"
->form textarea {</p
-><p
-class="p-Normal"
->    width: calc(100% - 10px);</p
-><p
-class="p-Normal"
->    padding: 5px;</p
-><p
-class="p-Normal"
->    border: 1px solid #ccc;</p
-><p
-class="p-Normal"
->    border-radius: 5px;</p
-><p
-class="p-Normal"
->}</p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
->form input[type="radio"] {</p
-><p
-class="p-Normal"
->    margin-right: 5px;</p
-><p
-class="p-Normal"
->}</p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
->form .buttons {</p
-><p
-class="p-Normal"
->    display: flex;</p
-><p
-class="p-Normal"
->    justify-content: space-between;</p
-><p
-class="p-Normal"
->}</p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
->form .buttons button {</p
-><p
-class="p-Normal"
->    background-color: #4CAF50;</p
-><p
-class="p-Normal"
->    color: white;</p
-><p
-class="p-Normal"
->    border: none;</p
-><p
-class="p-Normal"
->    padding: 10px;</p
-><p
-class="p-Normal"
->    cursor: pointer;</p
-><p
-class="p-Normal"
->    border-radius: 5px;</p
-><p
-class="p-Normal"
->    transition: background-color 0.3s ease;</p
-><p
-class="p-Normal"
->}</p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
->form .buttons button:hover {</p
-><p
-class="p-Normal"
->    background-color: #45a049;</p
-><p
-class="p-Normal"
->}</p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
->form .buttons button[type="button"] {</p
-><p
-class="p-Normal"
->    background-color: #f44336;</p
-><p
-class="p-Normal"
->}</p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
->form .buttons button[type="button"]:hover {</p
-><p
-class="p-Normal"
->    background-color: #e53935;</p
-><p
-class="p-Normal"
->}</p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
->/* Pregnancy details styling */</p
-><p
-class="p-Normal"
->#pregnancyDetails {</p
-><p
-class="p-Normal"
->    background-color: white;</p
-><p
-class="p-Normal"
->    padding: 20px;</p
-><p
-class="p-Normal"
->    border-radius: 10px;</p
-><p
-class="p-Normal"
->    box-shadow: 0 2px 4px rgba(0,0,0,0.1);</p
-><p
-class="p-Normal"
->    display: flex;</p
-><p
-class="p-Normal"
->    flex-direction: column;</p
-><p
-class="p-Normal"
->}</p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
->#pregnancyDetails div {</p
-><p
-class="p-Normal"
->    margin-bottom: 15px;</p
-><p
-class="p-Normal"
->}</p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
->#pregnancyDetails label {</p
-><p
-class="p-Normal"
->    display: block;</p
-><p
-class="p-Normal"
->    margin-bottom: 5px;</p
-><p
-class="p-Normal"
->    font-weight: bold;</p
-><p
-class="p-Normal"
->}</p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
->#pregnancyDetails input[type="text"],</p
-><p
-class="p-Normal"
->#pregnancyDetails input[type="date"] {</p
-><p
-class="p-Normal"
->    width: calc(100% - 10px);</p
-><p
-class="p-Normal"
->    padding: 5px;</p
-><p
-class="p-Normal"
->    border: 1px solid #ccc;</p
-><p
-class="p-Normal"
->    border-radius: 5px;</p
-><p
-class="p-Normal"
->}</p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
->/* Responsive styling */</p
-><p
-class="p-Normal"
->@media (max-width: 768px) {</p
-><p
-class="p-Normal"
->    .cage-list {</p
-><p
-class="p-Normal"
->        flex-direction: column;</p
-><p
-class="p-Normal"
->    }</p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
->    form {</p
-><p
-class="p-Normal"
->        width: 90%;</p
-><p
-class="p-Normal"
->        margin: 0 auto;</p
-><p
-class="p-Normal"
->    }</p
-><p
-class="p-Normal"
->}</p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
->@media (max-width: 480px) {</p
-><p
-class="p-Normal"
->    header {</p
-><p
-class="p-Normal"
->        padding: 10px;</p
-><p
-class="p-Normal"
->    }</p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
->    .cage-list button {</p
-><p
-class="p-Normal"
->        font-size: 1em;</p
-><p
-class="p-Normal"
->        padding: 10px;</p
-><p
-class="p-Normal"
->    }</p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
->    form {</p
-><p
-class="p-Normal"
->        width: 100%;</p
-><p
-class="p-Normal"
->    }</p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
->    body {</p
-><p
-class="p-Normal"
->        font-size: 12px;</p
-><p
-class="p-Normal"
->    }</p
-><p
-class="p-Normal"
->}</p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
-><span
-style="background-color: #FFFF00;"
->Cage_details.html</span
-></p
-><p
-class="p-Normal"
->&lt;!DOCTYPE html&gt;</p
-><p
-class="p-Normal"
->&lt;html lang="en"&gt;</p
-><p
-class="p-Normal"
->&lt;head&gt;</p
-><p
-class="p-Normal"
->    &lt;meta charset="UTF-8"&gt;</p
-><p
-class="p-Normal"
->    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p
-><p
-class="p-Normal"
->    &lt;title&gt;Rabbit Cage Management - Details&lt;/title&gt;</p
-><p
-class="p-Normal"
->    &lt;link rel="stylesheet" href="styles.css"&gt;</p
-><p
-class="p-Normal"
->&lt;/head&gt;</p
-><p
-class="p-Normal"
->&lt;body&gt;</p
-><p
-class="p-Normal"
->    &lt;header&gt;</p
-><p
-class="p-Normal"
->        &lt;button onclick="goHome()"&gt;&amp;#x1F3E0; Home&lt;/button&gt;</p
-><p
-class="p-Normal"
->    &lt;/header&gt;</p
-><p
-class="p-Normal"
->    &lt;form id="cageForm"&gt;</p
-><p
-class="p-Normal"
->        &lt;div&gt;</p
-><p
-class="p-Normal"
->            &lt;label for="cage"&gt;Cage:&lt;/label&gt;</p
-><p
-class="p-Normal"
->            &lt;input type="text" id="cage" name="cage" readonly&gt;</p
-><p
-class="p-Normal"
->        &lt;/div&gt;</p
-><p
-class="p-Normal"
->        &lt;div&gt;</p
-><p
-class="p-Normal"
->            &lt;label for="status"&gt;Rabbit Status:&lt;/label&gt;</p
-><p
-class="p-Normal"
->            &lt;input type="text" id="status" name="status" value="Rabbit Doe" readonly&gt;</p
-><p
-class="p-Normal"
->        &lt;/div&gt;</p
-><p
-class="p-Normal"
->        &lt;div&gt;</p
-><p
-class="p-Normal"
->            &lt;label for="breed"&gt;Breed:&lt;/label&gt;</p
-><p
-class="p-Normal"
->            &lt;input type="text" id="breed" name="breed"&gt;</p
-><p
-class="p-Normal"
->        &lt;/div&gt;</p
-><p
-class="p-Normal"
->        &lt;div&gt;</p
-><p
-class="p-Normal"
->            &lt;label for="family"&gt;Family:&lt;/label&gt;</p
-><p
-class="p-Normal"
->            &lt;input type="text" id="family" name="family"&gt;</p
-><p
-class="p-Normal"
->        &lt;/div&gt;</p
-><p
-class="p-Normal"
->        &lt;div&gt;</p
-><p
-class="p-Normal"
->            &lt;label for="dob"&gt;Date of Birth:&lt;/label&gt;</p
-><p
-class="p-Normal"
->            &lt;input type="date" id="dob" name="dob"&gt;</p
-><p
-class="p-Normal"
->        &lt;/div&gt;</p
-><p
-class="p-Normal"
->        &lt;div&gt;</p
-><p
-class="p-Normal"
->            &lt;label for="weight"&gt;Weight:&lt;/label&gt;</p
-><p
-class="p-Normal"
->            &lt;input type="text" id="weight" name="weight"&gt;</p
-><p
-class="p-Normal"
->        &lt;/div&gt;</p
-><p
-class="p-Normal"
->        &lt;div&gt;</p
-><p
-class="p-Normal"
->            &lt;label&gt;Pregnant:&lt;/label&gt;</p
-><p
-class="p-Normal"
->            &lt;label&gt;&lt;input type="radio" name="pregnant" value="yes"&gt; Yes&lt;/label&gt;</p
-><p
-class="p-Normal"
->            &lt;label&gt;&lt;input type="radio" name="pregnant" value="no"&gt; No&lt;/label&gt;</p
-><p
-class="p-Normal"
->        &lt;/div&gt;</p
-><p
-class="p-Normal"
->        &lt;div&gt;</p
-><p
-class="p-Normal"
->            &lt;label&gt;Food Intake:&lt;/label&gt;</p
-><p
-class="p-Normal"
->            &lt;label&gt;&lt;input type="radio" name="foodIntake" value="normal"&gt; Normal&lt;/label&gt;</p
-><p
-class="p-Normal"
->            &lt;label&gt;&lt;input type="radio" name="foodIntake" value="irregular"&gt; Irregular&lt;/label&gt;</p
-><p
-class="p-Normal"
->        &lt;/div&gt;</p
-><p
-class="p-Normal"
->        &lt;div&gt;</p
-><p
-class="p-Normal"
->            &lt;label&gt;Eligible for Mating:&lt;/label&gt;</p
-><p
-class="p-Normal"
->            &lt;label&gt;&lt;input type="radio" name="mating" value="yes"&gt; Yes&lt;/label&gt;</p
-><p
-class="p-Normal"
->            &lt;label&gt;&lt;input type="radio" name="mating" value="no"&gt; No&lt;/label&gt;</p
-><p
-class="p-Normal"
->        &lt;/div&gt;</p
-><p
-class="p-Normal"
->        &lt;div&gt;</p
-><p
-class="p-Normal"
->            &lt;label for="note"&gt;Note:&lt;/label&gt;</p
-><p
-class="p-Normal"
->            &lt;textarea id="note" name="note"&gt;&lt;/textarea&gt;</p
-><p
-class="p-Normal"
->        &lt;/div&gt;</p
-><p
-class="p-Normal"
->        &lt;div&gt;</p
-><p
-class="p-Normal"
->            &lt;label for="matedRabbit"&gt;Mated Rabbit:&lt;/label&gt;</p
-><p
-class="p-Normal"
->            &lt;input type="text" id="matedRabbit" name="matedRabbit"&gt;</p
-><p
-class="p-Normal"
->        &lt;/div&gt;</p
-><p
-class="p-Normal"
->        &lt;div&gt;</p
-><p
-class="p-Normal"
->            &lt;label for="startPregnancy"&gt;Start of Pregnancy:&lt;/label&gt;</p
-><p
-class="p-Normal"
->            &lt;input type="date" id="startPregnancy" name="startPregnancy"&gt;</p
-><p
-class="p-Normal"
->        &lt;/div&gt;</p
-><p
-class="p-Normal"
->        &lt;div&gt;</p
-><p
-class="p-Normal"
->            &lt;label for="dueDate"&gt;Due Date of Pregnancy:&lt;/label&gt;</p
-><p
-class="p-Normal"
->            &lt;input type="date" id="dueDate" name="dueDate"&gt;</p
-><p
-class="p-Normal"
->        &lt;/div&gt;</p
-><p
-class="p-Normal"
->        &lt;div class="buttons"&gt;</p
-><p
-class="p-Normal"
->            &lt;button type="submit"&gt;Submit&lt;/button&gt;</p
-><p
-class="p-Normal"
->            &lt;button type="button" onclick="goHome()"&gt;Cancel&lt;/button&gt;</p
-><p
-class="p-Normal"
->        &lt;/div&gt;</p
-><p
-class="p-Normal"
->    &lt;/form&gt;</p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
->    &lt;script&gt;</p
-><p
-class="p-Normal"
->        function goHome() {</p
-><p
-class="p-Normal"
->            window.location.href = 'index.html';</p
-><p
-class="p-Normal"
->        }</p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
->        // Get the cage name from URL parameters</p
-><p
-class="p-Normal"
->        const urlParams = new URLSearchParams(window.location.search);</p
-><p
-class="p-Normal"
->        const cageName = urlParams.get('cage');</p
-><p
-class="p-Normal"
->        document.getElementById('cage').value = cageName;</p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
->        document.getElementById('cageForm').addEventListener('submit', function(event) {</p
-><p
-class="p-Normal"
->            event.preventDefault();</p
-><p
-class="p-Normal"
->            </p
-><p
-class="p-Normal"
->            const formData = new FormData(this);</p
-><p
-class="p-Normal"
->            const data = {</p
-><p
-class="p-Normal"
->                cage: formData.get('cage'),</p
-><p
-class="p-Normal"
->                status: formData.get('status'),</p
-><p
-class="p-Normal"
->                breed: formData.get('breed'),</p
-><p
-class="p-Normal"
->                family: formData.get('family'),</p
-><p
-class="p-Normal"
->                dob: formData.get('dob'),</p
-><p
-class="p-Normal"
->                weight: formData.get('weight'),</p
-><p
-class="p-Normal"
->                pregnant: formData.get('pregnant'),</p
-><p
-class="p-Normal"
->                foodIntake: formData.get('foodIntake'),</p
-><p
-class="p-Normal"
->                mating: formData.get('mating'),</p
-><p
-class="p-Normal"
->                note: formData.get('note'),</p
-><p
-class="p-Normal"
->                matedRabbit: formData.get('matedRabbit'),</p
-><p
-class="p-Normal"
->                startPregnancy: formData.get('startPregnancy'),</p
-><p
-class="p-Normal"
->                dueDate: formData.get('dueDate'),</p
-><p
-class="p-Normal"
->            };</p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
->            console.log('Form Data:', data);</p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
->            // Here you can add code to send the data to your server</p
-><p
-class="p-Normal"
->            // For example, using fetch API:</p
-><p
-class="p-Normal"
->            // fetch('your_server_endpoint', {</p
-><p
-class="p-Normal"
->            //     method: 'POST',</p
-><p
-class="p-Normal"
->            //     body: JSON.stringify(data),</p
-><p
-class="p-Normal"
->            //     headers: {</p
-><p
-class="p-Normal"
->            //         'Content-Type': 'application/json'</p
-><p
-class="p-Normal"
->            //     }</p
-><p
-class="p-Normal"
->            // }).then(response =&gt; response.json())</p
-><p
-class="p-Normal"
->            // .then(data =&gt; {</p
-><p
-class="p-Normal"
->            //     console.log('Success:', data);</p
-><p
-class="p-Normal"
->            // }).catch((error) =&gt; {</p
-><p
-class="p-Normal"
->            //     console.error('Error:', error);</p
-><p
-class="p-Normal"
->            // });</p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
->            // Reset the form and go back to homepage</p
-><p
-class="p-Normal"
->            this.reset();</p
-><p
-class="p-Normal"
->            goHome();</p
-><p
-class="p-Normal"
->        });</p
-><p
-class="p-Normal"
->    &lt;/script&gt;</p
-><p
-class="p-Normal"
->&lt;/body&gt;</p
-><p
-class="p-Normal"
->&lt;/html&gt;</p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
-><span
-style="background-color: #FFFF00;"
->Rabbit Profile</span
-></p
-><p
-class="p-Normal"
->&lt;!DOCTYPE html&gt;</p
-><p
-class="p-Normal"
->&lt;html lang="en"&gt;</p
-><p
-class="p-Normal"
->&lt;head&gt;</p
-><p
-class="p-Normal"
->    &lt;meta charset="UTF-8"&gt;</p
-><p
-class="p-Normal"
->    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p
-><p
-class="p-Normal"
->    &lt;title&gt;Rabbit Profile&lt;/title&gt;</p
-><p
-class="p-Normal"
->    &lt;style&gt;</p
-><p
-class="p-Normal"
->        /* General styling */</p
-><p
-class="p-Normal"
->        body {</p
-><p
-class="p-Normal"
->            font-family: Arial, sans-serif;</p
-><p
-class="p-Normal"
->            background-color: #f4f4f4;</p
-><p
-class="p-Normal"
->            margin: 0;</p
-><p
-class="p-Normal"
->            padding: 0;</p
-><p
-class="p-Normal"
->            display: flex;</p
-><p
-class="p-Normal"
->            justify-content: center;</p
-><p
-class="p-Normal"
->            align-items: center;</p
-><p
-class="p-Normal"
->            height: 100vh;</p
-><p
-class="p-Normal"
->            flex-direction: column;</p
-><p
-class="p-Normal"
->            background-image: url('https://i.pinimg.com/564x/13/09/be/1309bedbe8e0684bcee7d04304e93dc3.jpg');</p
-><p
-class="p-Normal"
->            background-size: cover;</p
-><p
-class="p-Normal"
->            background-position: center;</p
-><p
-class="p-Normal"
->        }</p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
->        /* Header styling */</p
-><p
-class="p-Normal"
->        header {</p
-><p
-class="p-Normal"
->            background-color: #4CAF50;</p
-><p
-class="p-Normal"
->            color: white;</p
-><p
-class="p-Normal"
->            padding: 15px;</p
-><p
-class="p-Normal"
->            text-align: center;</p
-><p
-class="p-Normal"
->            width: 100%;</p
-><p
-class="p-Normal"
->            box-shadow: 0 2px 4px rgba(0,0,0,0.1);</p
-><p
-class="p-Normal"
->            position: relative;</p
-><p
-class="p-Normal"
->        }</p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
->        header button {</p
-><p
-class="p-Normal"
->            background: none;</p
-><p
-class="p-Normal"
->            border: none;</p
-><p
-class="p-Normal"
->            color: white;</p
-><p
-class="p-Normal"
->            font-size: 1.5em;</p
-><p
-class="p-Normal"
->            cursor: pointer;</p
-><p
-class="p-Normal"
->            position: absolute;</p
-><p
-class="p-Normal"
->            left: 15px;</p
-><p
-class="p-Normal"
->            top: 15px;</p
-><p
-class="p-Normal"
->        }</p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
->        /* Profile card styling */</p
-><p
-class="p-Normal"
->        .profile-card {</p
-><p
-class="p-Normal"
->            max-width: 400px;</p
-><p
-class="p-Normal"
->            background-color: #fff;</p
-><p
-class="p-Normal"
->            margin: 20px auto;</p
-><p
-class="p-Normal"
->            padding: 20px;</p
-><p
-class="p-Normal"
->            border-radius: 8px;</p
-><p
-class="p-Normal"
->            box-shadow: 0 0 10px rgba(0,0,0,0.1);</p
-><p
-class="p-Normal"
->            text-align: center;</p
-><p
-class="p-Normal"
->        }</p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
->        .profile-picture {</p
-><p
-class="p-Normal"
->            width: 150px;</p
-><p
-class="p-Normal"
->            height: 150px;</p
-><p
-class="p-Normal"
->            border-radius: 50%;</p
-><p
-class="p-Normal"
->            margin: 0 auto 20px;</p
-><p
-class="p-Normal"
->            overflow: hidden;</p
-><p
-class="p-Normal"
->        }</p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
->        .profile-picture img {</p
-><p
-class="p-Normal"
->            width: 100%;</p
-><p
-class="p-Normal"
->            height: 100%;</p
-><p
-class="p-Normal"
->            object-fit: cover;</p
-><p
-class="p-Normal"
->        }</p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
->        .profile-details {</p
-><p
-class="p-Normal"
->            text-align: left;</p
-><p
-class="p-Normal"
->            margin-bottom: 20px;</p
-><p
-class="p-Normal"
->        }</p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
->        .profile-details p {</p
-><p
-class="p-Normal"
->            margin: 8px 0;</p
-><p
-class="p-Normal"
->        }</p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
->        .edit-details {</p
-><p
-class="p-Normal"
->            background-color: #4CAF50;</p
-><p
-class="p-Normal"
->            color: #fff;</p
-><p
-class="p-Normal"
->            border: none;</p
-><p
-class="p-Normal"
->            padding: 10px 20px;</p
-><p
-class="p-Normal"
->            text-align: center;</p
-><p
-class="p-Normal"
->            text-decoration: none;</p
-><p
-class="p-Normal"
->            display: inline-block;</p
-><p
-class="p-Normal"
->            font-size: 16px;</p
-><p
-class="p-Normal"
->            border-radius: 4px;</p
-><p
-class="p-Normal"
->            cursor: pointer;</p
-><p
-class="p-Normal"
->        }</p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
->        /* Responsive styling */</p
-><p
-class="p-Normal"
->        @media (max-width: 768px) {</p
-><p
-class="p-Normal"
->            .cage-list {</p
-><p
-class="p-Normal"
->                flex-direction: column;</p
-><p
-class="p-Normal"
->            }</p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
->            form {</p
-><p
-class="p-Normal"
->                width: 90%;</p
-><p
-class="p-Normal"
->                margin: 0 auto;</p
-><p
-class="p-Normal"
->            }</p
-><p
-class="p-Normal"
->        }</p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
->        @media (max-width: 480px) {</p
-><p
-class="p-Normal"
->            header {</p
-><p
-class="p-Normal"
->                padding: 10px;</p
-><p
-class="p-Normal"
->            }</p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
->            .cage-list button {</p
-><p
-class="p-Normal"
->                font-size: 1em;</p
-><p
-class="p-Normal"
->                padding: 10px;</p
-><p
-class="p-Normal"
->            }</p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
->            form {</p
-><p
-class="p-Normal"
->                width: 100%;</p
-><p
-class="p-Normal"
->            }</p
-><p
-class="p-Normal"
-></p
-><p
-class="p-Normal"
->            body {</p
-><p
-class="p-Normal"
->                font-size: 12px;</p
-><p
-class="p-Normal"
->            }</p
-><p
-class="p-Normal"
->        }</p
-><p
-class="p-Normal"
->    &lt;/style&gt;</p
-><p
-class="p-Normal"
->&lt;/head&gt;</p
-><p
-class="p-Normal"
->&lt;body&gt;</p
-><p
-class="p-Normal"
->    &lt;div class="profile-card"&gt;</p
-><p
-class="p-Normal"
->        &lt;div class="profile-picture"&gt;</p
-><p
-class="p-Normal"
->            &lt;img src="https://i.pinimg.com/564x/fd/2a/2c/fd2a2cdad94156e950fa549ac59e1655.jpg" alt="Rabbit Profile Picture"&gt;</p
-><p
-class="p-Normal"
->        &lt;/div&gt;</p
-><p
-class="p-Normal"
->        &lt;h2&gt;Breeder&lt;/h2&gt;</p
-><p
-class="p-Normal"
->        &lt;div class="profile-details"&gt;</p
-><p
-class="p-Normal"
->            &lt;p&gt;Serial No.: &lt;span id="serial-no"&gt;12345&lt;/span&gt;&lt;/p&gt;</p
-><p
-class="p-Normal"
->            &lt;p&gt;Age: &lt;span id="age"&gt;2 years&lt;/span&gt;&lt;/p&gt;</p
-><p
-class="p-Normal"
->            &lt;p&gt;Gender: &lt;span id="gender"&gt;Female&lt;/span&gt;&lt;/p&gt;</p
-><p
-class="p-Normal"
->            &lt;p&gt;Breed: &lt;span id="breed"&gt;California&lt;/span&gt;&lt;/p&gt;</p
-><p
-class="p-Normal"
->            &lt;p&gt;Weight: &lt;span id="weight"&gt;1.5 kg&lt;/span&gt;&lt;/p&gt;</p
-><p
-class="p-Normal"
->        &lt;/div&gt;</p
-><p
-class="p-Normal"
->        &lt;div&gt;</p
-><p
-class="p-Normal"
->            &lt;a href="&lt;a href="https://codepen.io/pen/" class="edit-details"&gt;Edit Details&lt;/a&gt;</p
-><p
-class="p-Normal"
->        &lt;/div&gt;</p
-><p
-class="p-Normal"
->    &lt;/div&gt;</p
-><p
-class="p-Normal"
->&lt;/body&gt;</p
-><p
-class="p-Normal"
->&lt;/html&gt;</p
-></body
-></html
->
+</head>
+
+<body>
+
+    <header>
+
+        <button onclick="goHome()">&#x1F3E0;</button>
+
+        <span>Rabbit Cage Management</span>
+
+    </header>
+
+ 
+
+    <div id="cageDetails">
+
+        <form id="rabbitForm" onsubmit="saveData(event)">
+
+            <div>
+
+                <label for="breed">BREED:</label>
+
+                <input type="text" id="breed" name="breed">
+
+            </div>
+
+            <div>
+
+                <label for="family">FAMILY:</label>
+
+                <input type="text" id="family" name="family">
+
+            </div>
+
+            <div>
+
+                <label for="birthDate">DATE OF BIRTH:</label>
+
+                <input type="date" id="birthDate" name="birthDate">
+
+            </div>
+
+            <div>
+
+                <label for="weight">WEIGHT:</label>
+
+                <input type="text" id="weight" name="weight">
+
+            </div>
+
+            <div>
+
+                <label>PREGNANT:</label>
+
+                <label><input type="radio" name="pregnant" value="yes" onclick="togglePregnancyDetails(true)"> YES</label>
+
+                <label><input type="radio" name="pregnant" value="no" onclick="togglePregnancyDetails(false)"> NO</label>
+
+            </div>
+
+            <div id="pregnancyDetails" style="display: none;">
+
+                <div>
+
+                    <label for="matedRabbit">MATED RABBIT:</label>
+
+                    <input type="text" id="matedRabbit" name="matedRabbit">
+
+                </div>
+
+                <div>
+
+                    <label for="pregnancyStart">START OF PREGNANCY:</label>
+
+                    <input type="date" id="pregnancyStart" name="pregnancyStart">
+
+                </div>
+
+                <div>
+
+                    <label for="dueDate">DUE DATE OF PREGNANCY:</label>
+
+                    <input type="date" id="dueDate" name="dueDate">
+
+                </div>
+
+            </div>
+
+            <div>
+
+                <label for="foodIntake">FOOD INTAKE:</label>
+
+                <label><input type="radio" name="foodIntake" value="normal"> NORMAL</label>
+
+                <label><input type="radio" name="foodIntake" value="irregular"> IRREGULAR</label>
+
+            </div>
+
+            <div>
+
+                <label>ELIGIBLE FOR MATING:</label>
+
+                <label><input type="radio" name="mating" value="yes"> YES</label>
+
+                <label><input type="radio" name="mating" value="no"> NO</label>
+
+            </div>
+
+            <div>
+
+                <label for="note">NOTE:</label>
+
+                <textarea id="note" name="note"></textarea>
+
+            </div>
+
+            <div class="buttons">
+
+                <button type="submit">SUBMIT</button>
+
+                <button type="button" onclick="goHome()">CANCEL</button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+ 
+
+    <div id="homePage" class="cage-list" style="display: none;">
+
+        <button onclick="showCageDetails(1)">CAGE 1</button>
+
+        <button onclick="showCageDetails(2)">CAGE 2</button>
+
+        <button onclick="showCageDetails(3)">CAGE 3</button>
+
+        <button onclick="showCageDetails(4)">CAGE 4</button>
+
+    </div>
+
+ 
+
+    <script>
+
+        function goHome() {
+
+            document.getElementById('homePage').style.display = 'block';
+
+            document.getElementById('cageDetails').style.display = 'none';
+
+            document.getElementById('pregnancyDetails').style.display = 'none';
+
+        }
+
+ 
+
+        function showCageDetails(cageNumber) {
+
+            document.getElementById('homePage').style.display = 'none';
+
+            document.getElementById('cageDetails').style.display = 'block';
+
+            loadData(cageNumber);
+
+            // Store the current cage number
+
+            document.getElementById('rabbitForm').dataset.cageNumber = cageNumber;
+
+        }
+
+ 
+
+        function togglePregnancyDetails(show) {
+
+            document.getElementById('pregnancyDetails').style.display = show ? 'block' : 'none';
+
+        }
+
+ 
+
+        function saveData(event) {
+
+            event.preventDefault();
+
+            const form = document.getElementById('rabbitForm');
+
+            const cageNumber = form.dataset.cageNumber;
+
+            const data = new FormData(form);
+
+            const obj = {};
+
+            data.forEach((value, key) => {
+
+                obj[key] = value;
+
+            });
+
+            localStorage.setItem(`cageData${cageNumber}`, JSON.stringify(obj));
+
+            goHome();
+
+        }
+
+ 
+
+        function loadData(cageNumber) {
+
+            const data = JSON.parse(localStorage.getItem(`cageData${cageNumber}`));
+
+            const form = document.getElementById('rabbitForm');
+
+            if (data) {
+
+                Object.keys(data).forEach(key => {
+
+                    const field = form.elements[key];
+
+                    if (field) {
+
+                        if (field.type === 'radio') {
+
+                            form.elements[key].value = data[key];
+
+                            if (data[key] === "yes") {
+
+                                field.checked = true;
+
+                                togglePregnancyDetails(true);
+
+                            } else {
+
+                                field.checked = true;
+
+                                togglePregnancyDetails(false);
+
+                            }
+
+                        } else {
+
+                            field.value = data[key];
+
+                        }
+
+                    }
+
+                });
+
+            } else {
+
+                form.reset();
+
+                togglePregnancyDetails(false);
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
